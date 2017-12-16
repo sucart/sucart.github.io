@@ -1,0 +1,165 @@
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.jumbotron {
+  background-image: url("../img/bg_suc.jpg");
+  background-position: left;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+}
+
+.logo {
+  color: #749f9d;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.sublogo {
+  color: #9ab577;
+  font-family: 'Euphoria Script', cursive;
+}
+
+
+@media (min-width: 768px) {
+  .jumbotron {
+    height: 100vh;
+    min-height: 450px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-position: center center;
+    align-items: top;}
+  .infobulletunit {
+    padding-left: 0%;
+    padding-right: 0%; }
+  .logo {
+    font-size: 4rem; }
+  .sublogo {
+    font-size:  2rem; }
+  }
+
+@media (min-width: 992px) {
+  .jumbotron {
+    min-height: 650px;
+    align-items: center;}
+  .infobulletunit {
+    padding-left: 10%;
+    padding-right: 10%; }
+  .logo {
+    font-size: 5.5rem; }
+  .sublogo {
+    font-size: 2.5rem; }
+  }
+
+@media (min-width: 1200px) {
+  .logo {
+    font-size: 7rem; }
+  .sublogo {
+    font-size: 3rem; }
+  }
+
+.intro {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #749f9d;
+}
+
+.carousel-inner > .carousel-item > img {
+  width: auto;
+  max-height: 500px;
+  display: block;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+.introtext {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 60px;
+}
+
+.introheading {
+  color: #ffffff;
+  font-family: 'Euphoria Script', cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.introbody {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 56%;
+  background-color:#ffffff;
+  height: 2px;
+}
+
+.infobullets {
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.infobulletheading {
+  color: #000000;
+  font-family: 'Euphoria Script', cursive;
+  font-size: 4rem;
+  text-align: center;
+  width: 100%;
+}
+
+.infobulletbody {
+  color: #888888;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.infobulletimage {
+  width: auto;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.lastcreations {
+  background-color:#749f9d;
+}
+
+.lastcreationsheading {
+  color: #ffffff;
+  font-family: 'Euphoria Script', cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.showreelimage {
+  width: auto;
+  height: 250px;
+}
