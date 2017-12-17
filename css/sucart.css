@@ -1,39 +1,20 @@
-/*!
- * Start Bootstrap - Creative v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
- */
-body,
-html {
-  width: 100%;
-  height: 100%; }
 
-body {
-  font-family: 'Berkshire Swash', 'Helvetica Neue', Arial, sans-serif; }
+.navbar {
+    margin-bottom: 0px;
+}
 
-hr {
-  max-width: 50px;
-  border-width: 3px;
-  border-color: #F05F40; }
-
-hr.light {
-  border-color: #fff; }
-
-a {
-  color: #F05F40;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s; }
-  a:hover {
-    color: #f05f40; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Berkshire Swash', 'Helvetica Neue', Arial, sans-serif; }
+.jumbotron {
+  background-image: url("../img/bg_suc.jpg");
+  background-position: left;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+}
 
 .logo {
   color: #749f9d;
@@ -45,48 +26,237 @@ h6 {
   font-family: 'Euphoria Script', cursive;
 }
 
-header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/bg_suc.jpg");
-  background-position: left;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  header.masthead hr {
-    margin-top: 30px;
-    margin-bottom: 30px; }
-  header.masthead {
+
+@media (orientation:landscape) {
+  .hide-on-landscape {
+      display: none;
+  }
+  .show-on-landscape {
+      display: block !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
     height: 100vh;
     min-height: 450px;
     padding-top: 0;
-    padding-bottom: 0; }
-  header.masthead h1 {
-    font-size: 4rem;}
-  header.masthead p {
-    font-size: 4rem;
-    font-weight: 300; }
-  @media (min-width: 768px) {
-    header.masthead {
-      height: 100vh;
-      min-height: 450px;
-      padding-top: 0;
-      padding-bottom: 0;
-      background-position: center center;}
-    header.masthead h1 {
-      font-size: 4rem; }
-    header.masthead p {
-      font-size:  2rem; } }
-  @media (min-width: 992px) {
-    header.masthead {
-      min-height: 650px;}
-    header.masthead h1 {
-      font-size: 5.5rem; }
-    header.masthead h2 {
-        font-size: 2.5rem; }  }
-  @media (min-width: 1200px) {
-    header.masthead h1 {
-      font-size: 7rem; }
-    header.masthead h2 {
-        font-size: 3rem; } }
+    padding-bottom: 0;
+    background-position: center center;
+    align-items: top;}
+  .infobulletunit {
+    padding-left: 0%;
+    padding-right: 0%; }
+  .logo {
+    font-size: 4rem; }
+  .sublogo {
+    font-size:  2rem; }
+  }
+
+@media (min-width: 992px) {
+  .jumbotron {
+    min-height: 650px;
+    align-items: center;}
+  .infobulletunit {
+    padding-left: 10%;
+    padding-right: 10%; }
+  .logo {
+    font-size: 5.5rem; }
+  .sublogo {
+    font-size: 2.5rem; }
+  }
+
+@media (min-width: 1200px) {
+  .logo {
+    font-size: 7rem; }
+  .sublogo {
+    font-size: 3rem; }
+  }
+
+.intro {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    background-color: #749f9d;
+}
+
+.carousel-inner > .carousel-item > img {
+  width: auto;
+  max-height: 500px;
+  display: block;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+.introtext {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 60px;
+}
+
+.introheading {
+  color: #ffffff;
+  font-family: 'Euphoria Script', cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.introbody {
+  color: #DDDDDD;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 56%;
+  background-color:#ffffff;
+  height: 2px;
+}
+
+.infobullets {
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.infobulletheading {
+  color: #000000;
+  font-family: 'Euphoria Script', cursive;
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.infobulletbody {
+  color: #888888;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.infobulletimage {
+  width: auto;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.lastcreations {
+  background-color:#749f9d;
+}
+
+.lastcreationsheading {
+  color: #ffffff;
+  font-family: 'Euphoria Script', cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.showreelimageframe {
+  padding: 5px;
+}
+
+.showreelimage {
+  width: auto;
+  height: auto;
+  max-height: 400px;
+}
+
+.whiteseparator {
+  margin-top: 50px;
+  background-color: #fff;
+}
+
+.mercadonavidad {
+  background-color: #9ab577;
+  padding-bottom: 50px;
+}
+
+.mercadilloimg {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.mercadonavidadheading {
+  color: #ffffff;
+  font-family: 'Euphoria Script', cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.mercadillonavidadtext {
+  color: #ffffff;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.mercadillonavidadtext2 {
+  color: #ddd;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.mailrow {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.mailheading {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.mailtext {
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.iconmargin {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.copyrightbox {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.copyright {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
