@@ -223,6 +223,16 @@ hr {
   margin-right: 5%;
 }
 
+.encargoheading {
+  color: #ffffff;
+  font-family: 'Euphoria Script', cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
 .mailrow {
   padding-top: 30px;
   padding-bottom: 30px;
