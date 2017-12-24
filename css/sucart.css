@@ -98,13 +98,13 @@
 .introtext {
   padding-left: 15%;
   padding-right: 15%;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .introheading {
   color: #ffffff;
   font-family: 'Euphoria Script', cursive;
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 0px;
   width: 100%;
@@ -113,10 +113,19 @@
 .introbody {
   color: #DDDDDD;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-align: center;
   margin-top: 20px;
 }
+
+@media (min-width: 768px) {
+  .introheading {
+    font-size: 4rem; }
+  .introbody {
+    font-size: 1.3rem; }
+  .introtext {
+    padding-bottom: 60px; }
+  }
 
 hr {
   border: 0;
@@ -186,11 +195,16 @@ hr {
 .mercadonavidadheading {
   color: #ffffff;
   font-family: 'Euphoria Script', cursive;
-  font-size: 4rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 50px;
 }
+
+@media (min-width: 768px) {
+  .mercadonavidadheading {
+    font-size: 4rem; }
+  }
 
 .mercadillonavidadtext {
   color: #ffffff;
@@ -216,12 +230,18 @@ hr {
 .encargoheading {
   color: #ffffff;
   font-family: 'Euphoria Script', cursive;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;
   width: 100%;
 }
+
+
+@media (min-width: 768px) {
+  .encargoheading {
+    font-size: 3rem; }
+  }
 
 .mailrow {
   padding-top: 30px;
