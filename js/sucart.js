@@ -14,8 +14,16 @@ $(document).ready(function() {
     }
   });
 
+  window.sr = ScrollReveal({ reset: true });
+  sr.reveal('.infobulletimage', {
+    duration: 500,
+    reset: false,
+    delay: 100,
+    scale: 0.8,
+    distance: '10px'
+  }, 0);
+
   if (is_touch_device()) {
-    window.sr = ScrollReveal({ reset: true });
     sr.reveal('.showreelframe', {
       duration: 2000,
       delay: 200,
@@ -23,7 +31,6 @@ $(document).ready(function() {
       distance: '0px',
       viewFactor: 0.5
     }, 0);
-
     document.documentElement.classList.add('can-touch')
   } else {
     document.documentElement.classList.add('can-hover')
