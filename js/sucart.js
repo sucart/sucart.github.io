@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('.latestcreationsgallery').magnificPopup({
     delegate: 'a',
     type: 'image',
-    tLoading: 'Loading image #%curr%...',
+    tLoading: 'Cargando imagen #%curr%...',
     gallery: {
       enabled: true,
       navigateByImgClick: true,
@@ -10,7 +10,7 @@ $(document).ready(function() {
     },
     image: {
       titleSrc: 'title',
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+      tError: '<a href="%url%">La imagen #%curr%</a> no se ha podido cargar.'
     }
   });
 
