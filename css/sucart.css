@@ -168,16 +168,6 @@ hr {
   width: 100%;
 }
 
-.showreelimageframe {
-  padding: 5px;
-}
-
-.showreelimage {
-  width: auto;
-  height: auto;
-  max-height: 400px;
-}
-
 .whiteseparator {
   margin-top: 50px;
   background-color: #fff;

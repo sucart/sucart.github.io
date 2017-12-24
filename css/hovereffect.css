@@ -10,6 +10,10 @@
   background: #ffffff;
 }
 
+html.can-hover .hovereffect:hover {
+    cursor: zoom-in;
+}
+
 .hovereffect img {
   display: block;
   position: relative;
@@ -22,11 +26,7 @@
   -webkit-backface-visibility: hidden; backface-visibility: hidden;
 }
 
-.hovereffect:hover img {
-  display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+html.can-hover .hovereffect:hover img {
   opacity: 0.6;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
@@ -38,72 +38,132 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  top:0;
-  padding-top: 40%;
+  top: 0;
+  cursor: zoom-in;
+  outline: 0;
+}
+
+.hovereffect a:visited {
+  text-decoration: none;
+}
+
+.hovereffect h2 {
+  line-height: 1;
   text-align: center;
   text-decoration: none;
   color: #000;
   font-family: 'Euphoria Script', cursive;
   font-size: 3rem;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
 
-.hovereffect:hover a {
-  cursor: zoom-in;
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top:0;
-  padding-top: 40%;
-  text-align: center;
-  color: #000;
-  font-family: 'Euphoria Script', cursive;
-  font-size: 3rem;
+html.can-touch .hovereffect h2 {
+  opacity: 1;
+}
+
+html.can-hover .hovereffect h2 {
+  opacity: 0;
+}
+
+html.can-hover .hovereffect:hover h2 {
   opacity: 1;
 }
 
 .hovereffect hr {
-  display: block;
-  position: absolute;
   width: 60%;
   height: 4px;
-  margin-top: 60%;
   margin-left: 20%;
   margin-right: 20%;
   color: #000;
   background-color: #000;
-  top:0;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
 
-.hovereffect:hover hr {
+html.can-touch .hovereffect hr {
+  opacity: 1;
+}
+
+html.can-hover .hovereffect hr {
+  opacity: 0;
+}
+
+html.can-hover .hovereffect:hover hr {
   opacity: 1;
 }
 
 .hovereffect p {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top:0;
-  padding-top: 70%;
   text-align: center;
   text-decoration: none;
+  margin-bottom: 0;
   color: #000;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
-  opacity: 0;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
 
-.hovereffect:hover p {
+html.can-touch .hovereffect p {
   opacity: 1;
+}
+
+html.can-hover .hovereffect p {
+  opacity: 0;
+}
+
+html.can-hover .hovereffect:hover p {
+  opacity: 1;
+}
+
+.showreelimageframe {
+  padding: 5px;
+}
+
+.showreelimage {
+  width: auto;
+  height: auto;
+  max-height: 400px;
+}
+
+.showreelframe {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.showreelinside {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+html.can-touch .showreelinside {
+  justify-content: flex-end;
+}
+
+html.can-hover .showreelinside {
+  justify-content: center;
+}
+
+html.can-touch .showreeltextframe {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  width: 100%;
+}
+
+html.can-hover .showreeltextframe {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
 }
